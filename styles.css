@@ -72,3 +72,46 @@ nav a.active {
     font-weight: bold;
     margin: 5px 0;
 }
+
+.section-title {
+    padding: 30px 60px;
+    font-size: 24px;
+}
+
+.project-box {
+    display: flex;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 0 60px 30px;
+    overflow: hidden;
+}
+
+.project-links {
+    width: 120px;
+    border-right: 1px dashed gray;
+    padding: 20px;
+    text-align: center;
+
+    display: flex;               /* ✅ Flex فعال می‌کنیم */
+    align-items: center;         /* ✅ وسط‌چینی عمودی */
+    justify-content: center;     /* وسط‌چینی افقی */
+}
+
+.project-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.tags {
+    margin-top: 15px;
+}
+.tag {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #3A40FF;
+    color: #3A40FF;
+    padding: 4px 10px;
+    margin-left: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+}
