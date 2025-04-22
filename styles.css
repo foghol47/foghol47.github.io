@@ -1,0 +1,74 @@
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    background-color: #ddd;
+    justify-content: flex-end;
+}
+
+nav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-left: 1px solid #aaa;
+}
+
+nav a:last-child {
+    border-left: none;
+}
+
+nav a.active {
+    background-color: blue;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 5%;
+}
+
+.profile-pic {
+    border: 3px solid blue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.left {
+    text-align: center;
+    width: 50%;
+    min-width: 200px;
+}
+
+.right {
+    width: 30%;
+    text-align: end;
+    min-width: 300px;
+}
+
+.left a {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    text-decoration: underline;
+}
+
+.right h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.right p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
