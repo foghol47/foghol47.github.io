@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
+    font-size: 16px;
 }
 
 nav {
@@ -12,7 +13,7 @@ nav {
 }
 
 nav a {
-    padding: 10px 20px;
+    padding: 0.6em 1.2em;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -32,14 +33,16 @@ nav a.active {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px 5%;
+    padding: 2.5em 5%;
 }
 
 .profile-pic {
-    border: 3px solid blue;
+    border: 0.2em solid blue;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 15vw;
+    height: 15vw;
+    max-width: 200px;
+    max-height: 200px;
     object-fit: cover;
 }
 
@@ -57,61 +60,97 @@ nav a.active {
 
 .left a {
     display: block;
-    margin-top: 10px;
+    margin-top: 0.6em;
     color: black;
     text-decoration: underline;
 }
 
 .right h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 2.2rem;
+    margin-bottom: 0.5em;
 }
 
 .right p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
-    margin: 5px 0;
+    margin: 0.3em 0;
 }
 
 .section-title {
-    padding: 30px 60px;
-    font-size: 24px;
+    padding: 2em 5%;
+    font-size: 1.5rem;
 }
 
 .project-box {
     display: flex;
     background-color: #ddd;
-    border-radius: 10px;
-    margin: 0 60px 30px;
+    border-radius: 0.6em;
+    margin: 0 5% 2em;
     overflow: hidden;
 }
 
 .project-links {
-    width: 120px;
+    width: 10%;
+    min-width: 100px;
     border-right: 1px dashed gray;
-    padding: 20px;
+    padding: 1.5em;
     text-align: center;
-
-    display: flex;               /* ✅ Flex فعال می‌کنیم */
-    align-items: center;         /* ✅ وسط‌چینی عمودی */
-    justify-content: center;     /* وسط‌چینی افقی */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-content {
     flex: 1;
-    padding: 20px;
+    padding: 1.5em;
 }
 
 .tags {
-    margin-top: 15px;
+    margin-top: 1em;
 }
 .tag {
     display: inline-block;
     background-color: white;
     border: 1px solid #3A40FF;
     color: #3A40FF;
-    padding: 4px 10px;
-    margin-left: 5px;
-    border-radius: 20px;
-    font-size: 14px;
+    padding: 0.25em 0.8em;
+    margin-left: 0.4em;
+    border-radius: 2em;
+    font-size: 0.9rem;
+}
+
+.experience-container {
+    display: flex;
+    gap: 2.5em;
+    padding: 0 5% 2em;
+}
+
+.skills-box {
+    background-color: #ddd;
+    padding: 1.25em;
+    border-radius: 0.5em;
+    width: 25%;
+    min-width: 200px;
+}
+.skills-title {
+    text-align: center;
+    margin-bottom: 0.8em;
+}
+.skills-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.skills-box li {
+    margin-bottom: 0.5em;
+    font-size: 1rem;
+}
+
+.experience-box {
+    flex: 1;
+    background-color: #ddd;
+    padding: 1.25em;
+    border-radius: 0.5em;
+    font-size: 0.95rem;
+    line-height: 1.8;
 }
