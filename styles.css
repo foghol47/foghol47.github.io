@@ -111,12 +111,16 @@ nav a.active {
 .tag {
     display: inline-block;
     background-color: white;
-    border: 1px solid #3A40FF;
-    color: #3A40FF;
+    color: #2a2ee6;
+    border: 1px solid #2a2ee6;
     padding: 0.25em 0.8em;
     margin-left: 0.4em;
     border-radius: 2em;
     font-size: 0.9rem;
+}
+
+a {
+    color: #0000cc;
 }
 
 .experience-container {
